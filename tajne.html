@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="posun.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Moje miesta</title>
+  <link rel="shortcut icon" href="logo.png">
+  </head>
+  <body style="background-image:url(obr/Fairy-forest.jpg);background-repeat: no-repeat;
+    background-attachment:fixed;">
+    
+    <style>
+    
+#container 
+  {
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    background-color: #99FF66;
+  }
+
+
+#main-header
+    {
+      width: 1200px;
+      height:100px;
+      margin: auto;
+      margin-top: -10px;
+      background-image:url(obr/miestecka.jpg);
+     }
+
+#quote
+{
+    padding-left: 20px;
+    padding-top: 68px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 18px;
+    color: white;
+}
+     
+#line
+{
+    width: 1200px;
+    height: 50px;
+    background: #000066;
+}
+
+
+.dropbtn {
+    background-color: #000066;
+    color: white;
+    padding: 15.5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana ;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: powderblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-image:url(obr/Snímka.png);
+}
+
+   
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}    
+
+#spodek
+{
+    width: 1200px;
+    height: 50px;
+    margin:auto;
+    background-color: #000066;
+}
+
+#main-header2
+{
+      width: 1200px;
+      height:100px;
+      margin: auto;
+      background-image:url(obr/miestecka.jpg);
+}
+
+.floating-box {
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    margin: 14px;
+    background-color: #000066;  
+}
+
+.floating-box2 {
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    margin: 12px 0 0 50px;
+    background-color: #000066; 
+}
+    
+</style>
+
+ <style>
+ul {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    background-color: #000066;
+    width: 1000px;
+    height: 50px;
+    font-family: Verdana;
+    float: right;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-image:url(obr/Snímka.png);
+}
+
+.active {
+    background-color: #000066;
+}
+
+</style>
+
+    <div id="container">
+      <div id="main-header">
+        <div id="quote"><i>Objav moje miesta</i></div>           
+        </div>
+          <div id="line">           
+          <div class="floating-box"><a href="menu.html"><i style="font-size:25px;color:white;" class="fa">&#xf0c9;</i></a></div>
+<ul>
+  <li><a href="futrovna.html">FUTROVŇA</a></li>
+  <li><a href="lom.html">LOM</a></li>
+  <li><a href="mociar.html">MOČIAR</a></li>
+  <li><a href="nad.html">NAD CESTOU</a></li>
+  <li><a href="noznice.html">NOŽNICE</a></li>
+  <li><a href="pohoda.html">POHODA</a></li>
+  <li><a href="rubanisko.html">RÚBANISKO</a></li>
+  <li><a href="strmak.html">STRMÁK</a></li>
+</ul>
+
+
+</div>            
+
+    <div class="w3-content w3-section" style="max-width:1200px;">
+  <img class="mySlides" src="obr/miesto1.jpg" style="width:100%">   
+  <img class="mySlides" src="obr/miesto2.jpg" style="width:100%">
+  <img class="mySlides" src="obr/miesto3.jpg" style="width:100%">
+  <img class="mySlides" src="obr/miesto4.jpg" style="width:100%">
+</div>
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 6000); // Change image every 6 seconds
+}
+</script>
+    </div>
+        <div id="spodek">
+        <div class="floating-box2"><a href="http://www.shmu.sk/" target=_blank><i style="font-size:25px;color:white;" class="fa">&#xf0c2;</i></a></div>
+        <div class="floating-box2"><a href="http://radar.bourky.cz" target=_blank><i style="font-size:25px;color:white;" class="fa">&#xf0e7;</i></a></div>
+      </div>
+    <div id="main-header2">
+  </div>
+  </body>
+</html>

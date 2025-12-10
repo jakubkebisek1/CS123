@@ -1,0 +1,26 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+[Project tree]
+web
+	+Prieèinok
+		index1.html
+[Open project files]
+0=atlas.css
+[Selected Project Files]
+Main=
+Selected=atlas.css
+[atlas.css]
+TopLine=20
+Caret=32,59
